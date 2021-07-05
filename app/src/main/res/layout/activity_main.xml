@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="myData"
+            type="com.example.linearlayout.MyData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{myData.myName}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size" />
+
+        <EditText
+            android:id="@+id/nickNameEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:autofillHints="nick name"
+            android:hint="@string/enter_nick_name"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/done" />
+
+        <ImageView
+            android:id="@+id/starImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/user_profile_image"
+            android:src="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/displayNickNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"
+            android:visibility="gone"
+            android:text="@{myData.nickName}"
+            tools:text="My nick name is John" />
+    </LinearLayout>
+</layout>
