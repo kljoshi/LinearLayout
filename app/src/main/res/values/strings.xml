@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+    <string name="enter_nick_name">Enter nick name</string>
+    <string name="user_profile_image">user profile image</string>
+    <string name="done">Done</string>
+</resources>
