@@ -1,4 +1,4 @@
-# LinearLayout
+# LinearLayout - Lesson 2
 
 ## Lesson 2: Layouts
 This is the second android project in [Udacity: Developing Android Apps with Kotlin course.](https://classroom.udacity.com/courses/ud9012)
